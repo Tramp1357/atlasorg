@@ -3,9 +3,9 @@
 		<ul>
 			{foreach $nav.object as $object}
 				{if $currid!=$object.id}
-					<li><div class="topline"></div><a href="{if $object.id!=1}{$object.uri}{else}{$modx->getOption('site_url')}{/if}">{$object.linktext}</a>
+					<li class="{$object.cls}"><div class="topline"></div><a href="{if $object.id!=1}{$object.uri}{else}{$modx->getOption('site_url')}{/if}">{$object.linktext}</a>
 				{else}
-					<li class="active"><div class="topline"></div><span>{$object.linktext}</span>
+					<li class="{$object.cls}"><div class="topline"></div><span>{$object.linktext}</span>
 				{/if}
 				{if $object.childs}
 					<ul>
