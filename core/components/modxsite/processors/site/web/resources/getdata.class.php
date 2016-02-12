@@ -193,7 +193,7 @@ class truncate_modSiteWebResourcesGetdataProcessor extends modProcessor{
             'truncsplit'    => '<!-- splitter -->',
             'truncChars'    => true,
             'output_charset'=> $this->modx->getOption('modx_charset'),
-            'endTags'       => '',
+            'endTags'       => '&hellip;',
         ));
         
         $this->output_charset = $this->getProperty('output_charset');

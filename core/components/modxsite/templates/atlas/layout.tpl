@@ -3,6 +3,8 @@
 <html lang="ru">
 <head>
 	<base href="{$modx->getOption('site_url')}"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<title>{block name="title"}{$modx->resource->longtitle|default:$modx->resource->pagetitle} | {$modx->getOption('site_name')}{/block}</title>
 	<link href="{$template_url}css/style.css" rel="stylesheet"/>
 </head>
