@@ -1,0 +1,38 @@
+<?php return array (
+  'class' => 'vaporVehicle',
+  'object' => 
+  array (
+    'tableName' => 'billing_orders',
+    'drop' => 'DROP TABLE IF EXISTS `[[++table_prefix]]billing_orders`',
+    'table' => 'CREATE TABLE `[[++table_prefix]]billing_orders` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `number_history` int(10) unsigned NOT NULL DEFAULT \'1\',
+  `status_id` int(10) unsigned NOT NULL DEFAULT \'1\',
+  `contractor` int(10) unsigned DEFAULT NULL,
+  `createdby` int(11) unsigned DEFAULT NULL,
+  `editedby` int(10) unsigned DEFAULT NULL,
+  `createdon` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `editedon` timestamp NULL DEFAULT NULL,
+  `manager` int(10) unsigned DEFAULT NULL,
+  `address` mediumtext,
+  `comments` mediumtext,
+  `discount` mediumint(3) unsigned NOT NULL DEFAULT \'0\',
+  PRIMARY KEY (`id`),
+  KEY `status_id` (`status_id`),
+  KEY `contractor` (`contractor`),
+  KEY `createdby` (`createdby`),
+  KEY `editedby` (`editedby`),
+  KEY `createdon` (`createdon`),
+  KEY `manager` (`manager`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8',
+    'data' => 
+    array (
+    ),
+  ),
+  'vehicle_package' => 'vapor',
+  'vehicle_class' => 'vaporVehicle',
+  'guid' => 'abc2d3f6fd7ecd641425cc3a524ff3da',
+  'package' => '',
+  'signature' => '4ee49eb1ad3c141187c7998c9fc2f1d5',
+  'native_key' => 'abc2d3f6fd7ecd641425cc3a524ff3da',
+);

@@ -1,0 +1,42 @@
+<?php return array (
+  'class' => 'vaporVehicle',
+  'object' => 
+  array (
+    'tableName' => 'users',
+    'drop' => 'DROP TABLE IF EXISTS `[[++table_prefix]]users`',
+    'table' => 'CREATE TABLE `[[++table_prefix]]users` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL DEFAULT \'\',
+  `password` varchar(100) NOT NULL DEFAULT \'\',
+  `cachepwd` varchar(100) NOT NULL DEFAULT \'\',
+  `class_key` varchar(100) NOT NULL DEFAULT \'modUser\',
+  `active` tinyint(1) unsigned NOT NULL DEFAULT \'1\',
+  `remote_key` varchar(255) DEFAULT NULL,
+  `remote_data` text,
+  `hash_class` varchar(100) NOT NULL DEFAULT \'hashing.modPBKDF2\',
+  `salt` varchar(100) NOT NULL DEFAULT \'\',
+  `primary_group` int(10) unsigned NOT NULL DEFAULT \'0\',
+  `session_stale` text,
+  `sudo` tinyint(1) unsigned NOT NULL DEFAULT \'0\',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  KEY `class_key` (`class_key`),
+  KEY `remote_key` (`remote_key`),
+  KEY `primary_group` (`primary_group`)
+) ENGINE=MyISAM AUTO_INCREMENT=44 DEFAULT CHARSET=utf8',
+    'data' => 
+    array (
+      0 => 'INSERT INTO `[[++table_prefix]]users` (`id`, `username`, `password`, `cachepwd`, `class_key`, `active`, `remote_key`, `remote_data`, `hash_class`, `salt`, `primary_group`, `session_stale`, `sudo`) VALUES (\'1\', \'admin\', \'P3/gWbTaphPr//hV8djePt1qdcjN5CIxBVKE5tqdJyQ=\', \'\', \'modUser\', \'1\', NULL, NULL, \'hashing.modPBKDF2\', \'b052eb5470a21ff53697a5bf4cb43649\', \'1\', \'a:2:{i:1;s:12:\\"spravochniki\\";i:2;s:3:\\"web\\";}\', \'1\')',
+      1 => 'INSERT INTO `[[++table_prefix]]users` (`id`, `username`, `password`, `cachepwd`, `class_key`, `active`, `remote_key`, `remote_data`, `hash_class`, `salt`, `primary_group`, `session_stale`, `sudo`) VALUES (\'36\', \'manager\', \'/Yz0le4DyHVvPCzKKurJtOvUd4IccTFkraIYL7s1bzU=\', \'\', \'modUser\', \'1\', NULL, NULL, \'hashing.modPBKDF2\', \'50b1225d1cd20dd59187c3bd8c3ef5fa\', \'11\', \'a:3:{i:0;s:3:\\"mgr\\";i:1;s:12:\\"spravochniki\\";i:2;s:3:\\"web\\";}\', \'0\')',
+      2 => 'INSERT INTO `[[++table_prefix]]users` (`id`, `username`, `password`, `cachepwd`, `class_key`, `active`, `remote_key`, `remote_data`, `hash_class`, `salt`, `primary_group`, `session_stale`, `sudo`) VALUES (\'37\', \'shop_manager_pro\', \'WBd/FlGVMXrpB6ZTAOilnpAXDC+CrlkPiHzL2Khy9yg=\', \'\', \'modUser\', \'1\', NULL, NULL, \'hashing.modPBKDF2\', \'a7ba626e5d9ba37a31bd6f527480c01b\', \'0\', \'a:3:{i:0;s:3:\\"mgr\\";i:1;s:12:\\"spravochniki\\";i:2;s:3:\\"web\\";}\', \'0\')',
+      3 => 'INSERT INTO `[[++table_prefix]]users` (`id`, `username`, `password`, `cachepwd`, `class_key`, `active`, `remote_key`, `remote_data`, `hash_class`, `salt`, `primary_group`, `session_stale`, `sudo`) VALUES (\'38\', \'shop_admin\', \'E2D3eeeigqOWS9Cbsm7AhQ8Hm2jWGSHfPAHJKez8PZY=\', \'\', \'modUser\', \'1\', NULL, NULL, \'hashing.modPBKDF2\', \'5c25d0da8e720f95189764a4ef9571c5\', \'6\', \'a:2:{i:0;s:3:\\"mgr\\";i:1;s:12:\\"spravochniki\\";}\', \'0\')',
+      4 => 'INSERT INTO `[[++table_prefix]]users` (`id`, `username`, `password`, `cachepwd`, `class_key`, `active`, `remote_key`, `remote_data`, `hash_class`, `salt`, `primary_group`, `session_stale`, `sudo`) VALUES (\'39\', \'shop_manager\', \'TPzbm9JJLZ1GDQ/moV+UUdS+1jxdCfnCV59DMbtINfk=\', \'VOzxzfavswpzUN5sz/QI+ZOn6rYMRwQVTGY2hi8vH5k=\', \'modUser\', \'1\', NULL, NULL, \'hashing.modPBKDF2\', \'a7ba626e5d9ba37a31bd6f527480c01b\', \'8\', \'a:3:{i:0;s:3:\\"mgr\\";i:1;s:12:\\"spravochniki\\";i:2;s:3:\\"web\\";}\', \'0\')',
+    ),
+  ),
+  'vehicle_package' => 'vapor',
+  'vehicle_class' => 'vaporVehicle',
+  'guid' => '05f15153b610f62d2ec239a2373f2350',
+  'package' => '',
+  'signature' => '83bb1de214e83fc4ca739b3ddf574457',
+  'native_key' => '05f15153b610f62d2ec239a2373f2350',
+);

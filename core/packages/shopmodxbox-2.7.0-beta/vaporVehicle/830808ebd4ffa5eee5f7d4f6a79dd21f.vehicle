@@ -1,0 +1,36 @@
+<?php return array (
+  'class' => 'vaporVehicle',
+  'object' => 
+  array (
+    'tableName' => 'transport_providers',
+    'drop' => 'DROP TABLE IF EXISTS `[[++table_prefix]]transport_providers`',
+    'table' => 'CREATE TABLE `[[++table_prefix]]transport_providers` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `description` mediumtext,
+  `service_url` tinytext,
+  `username` varchar(255) NOT NULL DEFAULT \'\',
+  `api_key` varchar(255) NOT NULL DEFAULT \'\',
+  `created` datetime NOT NULL,
+  `updated` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `active` tinyint(1) NOT NULL DEFAULT \'1\',
+  `priority` tinyint(4) NOT NULL DEFAULT \'10\',
+  `properties` mediumtext NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`),
+  KEY `api_key` (`api_key`),
+  KEY `username` (`username`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8',
+    'data' => 
+    array (
+      0 => 'INSERT INTO `[[++table_prefix]]transport_providers` (`id`, `name`, `description`, `service_url`, `username`, `api_key`, `created`, `updated`, `active`, `priority`, `properties`) VALUES (\'1\', \'modx.com\', \'The official MODX transport facility for 3rd party components.\', \'http://rest.modx.com/extras/\', \'\', \'\', \'2015-10-06 13:06:53\', \'2015-10-25 16:08:40\', \'1\', \'10\', \'\')',
+      1 => 'INSERT INTO `[[++table_prefix]]transport_providers` (`id`, `name`, `description`, `service_url`, `username`, `api_key`, `created`, `updated`, `active`, `priority`, `properties`) VALUES (\'2\', \'modxstore.ru\', \'\', \'http://rest.modxstore.ru/extras/\', \'\', \'\', \'2013-07-04 18:57:33\', NULL, \'1\', \'10\', \'\')',
+    ),
+  ),
+  'vehicle_package' => 'vapor',
+  'vehicle_class' => 'vaporVehicle',
+  'guid' => '5fd187f731ebc866450327f6c8dd5208',
+  'package' => '',
+  'signature' => '830808ebd4ffa5eee5f7d4f6a79dd21f',
+  'native_key' => '5fd187f731ebc866450327f6c8dd5208',
+);

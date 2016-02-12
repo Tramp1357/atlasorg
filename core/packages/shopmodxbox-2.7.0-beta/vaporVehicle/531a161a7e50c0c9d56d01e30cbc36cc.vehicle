@@ -1,0 +1,30 @@
+<?php return array (
+  'class' => 'vaporVehicle',
+  'object' => 
+  array (
+    'tableName' => 'workspaces',
+    'drop' => 'DROP TABLE IF EXISTS `[[++table_prefix]]workspaces`',
+    'table' => 'CREATE TABLE `[[++table_prefix]]workspaces` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL DEFAULT \'\',
+  `path` varchar(255) NOT NULL DEFAULT \'\',
+  `created` datetime NOT NULL,
+  `active` tinyint(1) unsigned NOT NULL DEFAULT \'0\',
+  `attributes` mediumtext,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `path` (`path`),
+  KEY `name` (`name`),
+  KEY `active` (`active`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8',
+    'data' => 
+    array (
+      0 => 'INSERT INTO `[[++table_prefix]]workspaces` (`id`, `name`, `path`, `created`, `active`, `attributes`) VALUES (\'1\', \'Default MODX workspace\', \'{core_path}\', \'2013-05-26 16:37:52\', \'1\', NULL)',
+    ),
+  ),
+  'vehicle_package' => 'vapor',
+  'vehicle_class' => 'vaporVehicle',
+  'guid' => 'ae362d3905a62aeaa595587eed665587',
+  'package' => '',
+  'signature' => '531a161a7e50c0c9d56d01e30cbc36cc',
+  'native_key' => 'ae362d3905a62aeaa595587eed665587',
+);

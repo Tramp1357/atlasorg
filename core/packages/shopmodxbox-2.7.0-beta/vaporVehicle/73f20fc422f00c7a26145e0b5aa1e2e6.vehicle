@@ -1,0 +1,27 @@
+<?php return array (
+  'class' => 'vaporVehicle',
+  'object' => 
+  array (
+    'tableName' => 'register_queues',
+    'drop' => 'DROP TABLE IF EXISTS `[[++table_prefix]]register_queues`',
+    'table' => 'CREATE TABLE `[[++table_prefix]]register_queues` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `options` mediumtext,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8',
+    'data' => 
+    array (
+      0 => 'INSERT INTO `[[++table_prefix]]register_queues` (`id`, `name`, `options`) VALUES (\'1\', \'locks\', \'a:1:{s:9:\\"directory\\";s:5:\\"locks\\";}\')',
+      1 => 'INSERT INTO `[[++table_prefix]]register_queues` (`id`, `name`, `options`) VALUES (\'2\', \'resource_reload\', \'a:1:{s:9:\\"directory\\";s:15:\\"resource_reload\\";}\')',
+      2 => 'INSERT INTO `[[++table_prefix]]register_queues` (`id`, `name`, `options`) VALUES (\'3\', \'user\', \'a:0:{}\')',
+    ),
+  ),
+  'vehicle_package' => 'vapor',
+  'vehicle_class' => 'vaporVehicle',
+  'guid' => '842e8bc1508481c2df244e6cc6d9aa0d',
+  'package' => '',
+  'signature' => '73f20fc422f00c7a26145e0b5aa1e2e6',
+  'native_key' => '842e8bc1508481c2df244e6cc6d9aa0d',
+);

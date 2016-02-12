@@ -1,0 +1,18 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'b8f8b865a19143c1e84fa9022b15422c',
+  'package' => 'modx.sources',
+  'class' => 'modMediaSourceElement',
+  'signature' => '8e1f7144595131c77dd728b17847d9ce',
+  'native_key' => 
+  array (
+    0 => 10,
+    1 => 'modTemplateVar',
+    2 => 8,
+    3 => 'spravochniki',
+  ),
+  'object' => '{"source":10,"object_class":"modTemplateVar","object":8,"context_key":"spravochniki"}',
+);

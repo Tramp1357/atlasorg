@@ -1,0 +1,13 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => false,
+  'unique_key' => 'class',
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'adf95aecb7900da29054e0cb6569682e',
+  'package' => 'modx',
+  'class' => 'modClassMap',
+  'signature' => 'b84a631e737bebdd53c51913543bd13d',
+  'native_key' => NULL,
+  'object' => '{"id":null,"class":"modChunk","parent_class":"modElement","name_field":"name","path":"","lexicon":"core:resource"}',
+);

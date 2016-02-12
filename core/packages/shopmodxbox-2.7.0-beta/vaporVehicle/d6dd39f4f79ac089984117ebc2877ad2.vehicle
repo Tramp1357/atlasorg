@@ -1,0 +1,33 @@
+<?php return array (
+  'class' => 'vaporVehicle',
+  'object' => 
+  array (
+    'tableName' => 'access_elements',
+    'drop' => 'DROP TABLE IF EXISTS `[[++table_prefix]]access_elements`',
+    'table' => 'CREATE TABLE `[[++table_prefix]]access_elements` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `target` varchar(100) NOT NULL DEFAULT \'\',
+  `principal_class` varchar(100) NOT NULL DEFAULT \'modPrincipal\',
+  `principal` int(10) unsigned NOT NULL DEFAULT \'0\',
+  `authority` int(10) unsigned NOT NULL DEFAULT \'9999\',
+  `policy` int(10) unsigned NOT NULL DEFAULT \'0\',
+  `context_key` varchar(100) NOT NULL DEFAULT \'\',
+  PRIMARY KEY (`id`),
+  KEY `target` (`target`),
+  KEY `principal_class` (`principal_class`),
+  KEY `principal` (`principal`),
+  KEY `authority` (`authority`),
+  KEY `policy` (`policy`),
+  KEY `context_key` (`context_key`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8',
+    'data' => 
+    array (
+    ),
+  ),
+  'vehicle_package' => 'vapor',
+  'vehicle_class' => 'vaporVehicle',
+  'guid' => 'eba8ecc538e6e5cff386a2cd7771f727',
+  'package' => '',
+  'signature' => 'd6dd39f4f79ac089984117ebc2877ad2',
+  'native_key' => 'eba8ecc538e6e5cff386a2cd7771f727',
+);

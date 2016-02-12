@@ -1,0 +1,38 @@
+<?php return array (
+  'class' => 'vaporVehicle',
+  'object' => 
+  array (
+    'tableName' => 'class_map',
+    'drop' => 'DROP TABLE IF EXISTS `[[++table_prefix]]class_map`',
+    'table' => 'CREATE TABLE `[[++table_prefix]]class_map` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `class` varchar(120) NOT NULL DEFAULT \'\',
+  `parent_class` varchar(120) NOT NULL DEFAULT \'\',
+  `name_field` varchar(255) NOT NULL DEFAULT \'name\',
+  `path` tinytext,
+  `lexicon` varchar(255) NOT NULL DEFAULT \'core:resource\',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `class` (`class`),
+  KEY `parent_class` (`parent_class`),
+  KEY `name_field` (`name_field`)
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8',
+    'data' => 
+    array (
+      0 => 'INSERT INTO `[[++table_prefix]]class_map` (`id`, `class`, `parent_class`, `name_field`, `path`, `lexicon`) VALUES (\'1\', \'modDocument\', \'modResource\', \'pagetitle\', \'\', \'core:resource\')',
+      1 => 'INSERT INTO `[[++table_prefix]]class_map` (`id`, `class`, `parent_class`, `name_field`, `path`, `lexicon`) VALUES (\'2\', \'modWebLink\', \'modResource\', \'pagetitle\', \'\', \'core:resource\')',
+      2 => 'INSERT INTO `[[++table_prefix]]class_map` (`id`, `class`, `parent_class`, `name_field`, `path`, `lexicon`) VALUES (\'3\', \'modSymLink\', \'modResource\', \'pagetitle\', \'\', \'core:resource\')',
+      3 => 'INSERT INTO `[[++table_prefix]]class_map` (`id`, `class`, `parent_class`, `name_field`, `path`, `lexicon`) VALUES (\'4\', \'modStaticResource\', \'modResource\', \'pagetitle\', \'\', \'core:resource\')',
+      4 => 'INSERT INTO `[[++table_prefix]]class_map` (`id`, `class`, `parent_class`, `name_field`, `path`, `lexicon`) VALUES (\'5\', \'modTemplate\', \'modElement\', \'templatename\', \'\', \'core:resource\')',
+      5 => 'INSERT INTO `[[++table_prefix]]class_map` (`id`, `class`, `parent_class`, `name_field`, `path`, `lexicon`) VALUES (\'6\', \'modTemplateVar\', \'modElement\', \'name\', \'\', \'core:resource\')',
+      6 => 'INSERT INTO `[[++table_prefix]]class_map` (`id`, `class`, `parent_class`, `name_field`, `path`, `lexicon`) VALUES (\'7\', \'modChunk\', \'modElement\', \'name\', \'\', \'core:resource\')',
+      7 => 'INSERT INTO `[[++table_prefix]]class_map` (`id`, `class`, `parent_class`, `name_field`, `path`, `lexicon`) VALUES (\'8\', \'modSnippet\', \'modElement\', \'name\', \'\', \'core:resource\')',
+      8 => 'INSERT INTO `[[++table_prefix]]class_map` (`id`, `class`, `parent_class`, `name_field`, `path`, `lexicon`) VALUES (\'9\', \'modPlugin\', \'modElement\', \'name\', \'\', \'core:resource\')',
+    ),
+  ),
+  'vehicle_package' => 'vapor',
+  'vehicle_class' => 'vaporVehicle',
+  'guid' => '8b191f7b822ce88aba8d6bf173d66bb8',
+  'package' => '',
+  'signature' => 'fd9f2388e3b77599a9aac858c6f2b294',
+  'native_key' => '8b191f7b822ce88aba8d6bf173d66bb8',
+);

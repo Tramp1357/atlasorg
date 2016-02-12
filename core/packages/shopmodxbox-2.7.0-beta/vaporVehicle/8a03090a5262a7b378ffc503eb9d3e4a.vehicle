@@ -1,0 +1,26 @@
+<?php return array (
+  'class' => 'vaporVehicle',
+  'object' => 
+  array (
+    'tableName' => 'active_users',
+    'drop' => 'DROP TABLE IF EXISTS `[[++table_prefix]]active_users`',
+    'table' => 'CREATE TABLE `[[++table_prefix]]active_users` (
+  `internalKey` int(9) NOT NULL DEFAULT \'0\',
+  `username` varchar(50) NOT NULL DEFAULT \'\',
+  `lasthit` int(20) NOT NULL DEFAULT \'0\',
+  `id` int(10) DEFAULT NULL,
+  `action` varchar(255) NOT NULL DEFAULT \'\',
+  `ip` varchar(20) NOT NULL DEFAULT \'\',
+  PRIMARY KEY (`internalKey`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8',
+    'data' => 
+    array (
+    ),
+  ),
+  'vehicle_package' => 'vapor',
+  'vehicle_class' => 'vaporVehicle',
+  'guid' => '2d7baec2b506f6fd8cdcf4a3e98bee6f',
+  'package' => '',
+  'signature' => '8a03090a5262a7b378ffc503eb9d3e4a',
+  'native_key' => '2d7baec2b506f6fd8cdcf4a3e98bee6f',
+);

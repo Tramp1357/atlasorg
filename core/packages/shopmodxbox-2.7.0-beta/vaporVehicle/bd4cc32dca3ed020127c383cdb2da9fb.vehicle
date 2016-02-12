@@ -1,0 +1,29 @@
+<?php return array (
+  'class' => 'vaporVehicle',
+  'object' => 
+  array (
+    'tableName' => 'user_group_roles',
+    'drop' => 'DROP TABLE IF EXISTS `[[++table_prefix]]user_group_roles`',
+    'table' => 'CREATE TABLE `[[++table_prefix]]user_group_roles` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `description` mediumtext,
+  `authority` int(10) unsigned NOT NULL DEFAULT \'9999\',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`),
+  KEY `authority` (`authority`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8',
+    'data' => 
+    array (
+      0 => 'INSERT INTO `[[++table_prefix]]user_group_roles` (`id`, `name`, `description`, `authority`) VALUES (\'1\', \'Member\', NULL, \'9999\')',
+      1 => 'INSERT INTO `[[++table_prefix]]user_group_roles` (`id`, `name`, `description`, `authority`) VALUES (\'2\', \'Super User\', NULL, \'0\')',
+      2 => 'INSERT INTO `[[++table_prefix]]user_group_roles` (`id`, `name`, `description`, `authority`) VALUES (\'3\', \'Staff\', \'\', \'5000\')',
+    ),
+  ),
+  'vehicle_package' => 'vapor',
+  'vehicle_class' => 'vaporVehicle',
+  'guid' => '2fa16a828f090307e4e57f4d4f2079e1',
+  'package' => '',
+  'signature' => 'bd4cc32dca3ed020127c383cdb2da9fb',
+  'native_key' => '2fa16a828f090307e4e57f4d4f2079e1',
+);

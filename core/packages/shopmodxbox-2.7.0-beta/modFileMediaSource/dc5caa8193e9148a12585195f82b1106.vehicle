@@ -1,0 +1,20 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"type":"php","source":"shopmodxbox-2.7.0-beta\\/modFileMediaSource\\/dc5caa8193e9148a12585195f82b1106.resolve.media_source.resolver","target":"core\\/model\\/modx\\/","targetRelative":true,"name":"resolve.media_source"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '62135dd61d73d7037bec61b9fd658cab',
+  'package' => 'modx.sources',
+  'class' => 'modFileMediaSource',
+  'signature' => 'dc5caa8193e9148a12585195f82b1106',
+  'native_key' => 5,
+  'object' => '{"id":5,"name":"MODX Model","description":"Source for MODX Model","class_key":"sources.modFileMediaSource","properties":"a:2:{s:8:\\"basePath\\";a:6:{s:4:\\"name\\";s:8:\\"basePath\\";s:4:\\"desc\\";s:23:\\"prop_file.basePath_desc\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:78:\\"\\/var\\/www\\/modxdev.webtm.ru\\/shopmodxbox\\/dev\\/modx2_3\\/public_html\\/core\\/model\\/modx\\/\\";s:7:\\"lexicon\\";s:11:\\"core:source\\";}s:16:\\"basePathRelative\\";a:6:{s:4:\\"name\\";s:16:\\"basePathRelative\\";s:4:\\"desc\\";s:31:\\"prop_file.basePathRelative_desc\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:0;s:7:\\"lexicon\\";s:11:\\"core:source\\";}}","is_stream":1}',
+);

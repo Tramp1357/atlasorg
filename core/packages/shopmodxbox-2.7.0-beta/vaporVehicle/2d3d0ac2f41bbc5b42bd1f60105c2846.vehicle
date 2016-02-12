@@ -1,0 +1,24 @@
+<?php return array (
+  'class' => 'vaporVehicle',
+  'object' => 
+  array (
+    'tableName' => 'site_tmplvar_access',
+    'drop' => 'DROP TABLE IF EXISTS `[[++table_prefix]]site_tmplvar_access`',
+    'table' => 'CREATE TABLE `[[++table_prefix]]site_tmplvar_access` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `tmplvarid` int(10) NOT NULL DEFAULT \'0\',
+  `documentgroup` int(10) NOT NULL DEFAULT \'0\',
+  PRIMARY KEY (`id`),
+  KEY `tmplvar_template` (`tmplvarid`,`documentgroup`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8',
+    'data' => 
+    array (
+    ),
+  ),
+  'vehicle_package' => 'vapor',
+  'vehicle_class' => 'vaporVehicle',
+  'guid' => 'e222ec253deaea3d24f764d98fabd4be',
+  'package' => '',
+  'signature' => '2d3d0ac2f41bbc5b42bd1f60105c2846',
+  'native_key' => 'e222ec253deaea3d24f764d98fabd4be',
+);

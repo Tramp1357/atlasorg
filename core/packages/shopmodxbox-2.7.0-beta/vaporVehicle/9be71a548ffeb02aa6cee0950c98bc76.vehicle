@@ -1,0 +1,28 @@
+<?php return array (
+  'class' => 'vaporVehicle',
+  'object' => 
+  array (
+    'tableName' => 'documentgroup_names',
+    'drop' => 'DROP TABLE IF EXISTS `[[++table_prefix]]documentgroup_names`',
+    'table' => 'CREATE TABLE `[[++table_prefix]]documentgroup_names` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL DEFAULT \'\',
+  `private_memgroup` tinyint(1) unsigned NOT NULL DEFAULT \'0\',
+  `private_webgroup` tinyint(1) unsigned NOT NULL DEFAULT \'0\',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8',
+    'data' => 
+    array (
+      0 => 'INSERT INTO `[[++table_prefix]]documentgroup_names` (`id`, `name`, `private_memgroup`, `private_webgroup`) VALUES (\'1\', \'Личный кабинет\', \'0\', \'0\')',
+      1 => 'INSERT INTO `[[++table_prefix]]documentgroup_names` (`id`, `name`, `private_memgroup`, `private_webgroup`) VALUES (\'2\', \'Для программистов\', \'0\', \'0\')',
+      2 => 'INSERT INTO `[[++table_prefix]]documentgroup_names` (`id`, `name`, `private_memgroup`, `private_webgroup`) VALUES (\'3\', \'Вывод в меню\', \'0\', \'0\')',
+    ),
+  ),
+  'vehicle_package' => 'vapor',
+  'vehicle_class' => 'vaporVehicle',
+  'guid' => '534f31182e681653044a8e8dee66fece',
+  'package' => '',
+  'signature' => '9be71a548ffeb02aa6cee0950c98bc76',
+  'native_key' => '534f31182e681653044a8e8dee66fece',
+);

@@ -1,0 +1,33 @@
+<?php return array (
+  'class' => 'vaporVehicle',
+  'object' => 
+  array (
+    'tableName' => 'fc_sets',
+    'drop' => 'DROP TABLE IF EXISTS `[[++table_prefix]]fc_sets`',
+    'table' => 'CREATE TABLE `[[++table_prefix]]fc_sets` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `profile` int(11) NOT NULL DEFAULT \'0\',
+  `action` varchar(255) NOT NULL DEFAULT \'\',
+  `description` text NOT NULL,
+  `active` tinyint(1) NOT NULL DEFAULT \'0\',
+  `template` int(11) NOT NULL DEFAULT \'0\',
+  `constraint` varchar(255) NOT NULL DEFAULT \'\',
+  `constraint_field` varchar(100) NOT NULL DEFAULT \'\',
+  `constraint_class` varchar(100) NOT NULL DEFAULT \'\',
+  PRIMARY KEY (`id`),
+  KEY `profile` (`profile`),
+  KEY `action` (`action`),
+  KEY `active` (`active`),
+  KEY `template` (`template`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8',
+    'data' => 
+    array (
+    ),
+  ),
+  'vehicle_package' => 'vapor',
+  'vehicle_class' => 'vaporVehicle',
+  'guid' => '4a3640dc33cb7c9f9ef2dbc081aac3ad',
+  'package' => '',
+  'signature' => '3d9f9dcb2d6f386039739515f6d9d7f4',
+  'native_key' => '4a3640dc33cb7c9f9ef2dbc081aac3ad',
+);

@@ -1,0 +1,20 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"type":"php","source":"shopmodxbox-2.7.0-beta\\/modFileMediaSource\\/fed785b16b719352fd93b58824da9207.resolve.media_source.resolver","target":"core\\/components\\/billing\\/","targetRelative":true,"name":"resolve.media_source"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'e64415ebaabf63b6fa18bdebda8dabfb',
+  'package' => 'modx.sources',
+  'class' => 'modFileMediaSource',
+  'signature' => 'fed785b16b719352fd93b58824da9207',
+  'native_key' => 18,
+  'object' => '{"id":18,"name":"Billing core","description":"core\\/components\\/billing\\/","class_key":"sources.modFileMediaSource","properties":"a:2:{s:8:\\"basePath\\";a:6:{s:4:\\"name\\";s:8:\\"basePath\\";s:4:\\"desc\\";s:23:\\"prop_file.basePath_desc\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:86:\\"\\/var\\/www\\/modxdev.webtm.ru\\/shopmodxbox\\/dev\\/modx2_3\\/public_html\\/core\\/components\\/billing\\/\\";s:7:\\"lexicon\\";s:11:\\"core:source\\";}s:16:\\"basePathRelative\\";a:6:{s:4:\\"name\\";s:16:\\"basePathRelative\\";s:4:\\"desc\\";s:31:\\"prop_file.basePathRelative_desc\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:0;s:7:\\"lexicon\\";s:11:\\"core:source\\";}}","is_stream":1}',
+);

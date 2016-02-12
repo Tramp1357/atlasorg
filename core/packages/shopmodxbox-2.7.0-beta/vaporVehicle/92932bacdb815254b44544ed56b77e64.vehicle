@@ -1,0 +1,25 @@
+<?php return array (
+  'class' => 'vaporVehicle',
+  'object' => 
+  array (
+    'tableName' => 'modxsdk_project_package',
+    'drop' => 'DROP TABLE IF EXISTS `[[++table_prefix]]modxsdk_project_package`',
+    'table' => 'CREATE TABLE `[[++table_prefix]]modxsdk_project_package` (
+  `projectid` int(10) unsigned NOT NULL,
+  `packageid` int(10) unsigned NOT NULL,
+  UNIQUE KEY `projectid` (`projectid`,`packageid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8',
+    'data' => 
+    array (
+      0 => 'INSERT INTO `[[++table_prefix]]modxsdk_project_package` (`projectid`, `packageid`) VALUES (\'1\', \'1\')',
+      1 => 'INSERT INTO `[[++table_prefix]]modxsdk_project_package` (`projectid`, `packageid`) VALUES (\'1\', \'4\')',
+      2 => 'INSERT INTO `[[++table_prefix]]modxsdk_project_package` (`projectid`, `packageid`) VALUES (\'1\', \'5\')',
+    ),
+  ),
+  'vehicle_package' => 'vapor',
+  'vehicle_class' => 'vaporVehicle',
+  'guid' => 'bb0429ae0ca18104341710b73186da05',
+  'package' => '',
+  'signature' => '92932bacdb815254b44544ed56b77e64',
+  'native_key' => 'bb0429ae0ca18104341710b73186da05',
+);

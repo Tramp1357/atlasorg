@@ -1,0 +1,31 @@
+<?php return array (
+  'class' => 'vaporVehicle',
+  'object' => 
+  array (
+    'tableName' => 'access_menus',
+    'drop' => 'DROP TABLE IF EXISTS `[[++table_prefix]]access_menus`',
+    'table' => 'CREATE TABLE `[[++table_prefix]]access_menus` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `target` varchar(100) NOT NULL DEFAULT \'\',
+  `principal_class` varchar(100) NOT NULL DEFAULT \'modPrincipal\',
+  `principal` int(10) unsigned NOT NULL DEFAULT \'0\',
+  `authority` int(10) unsigned NOT NULL DEFAULT \'9999\',
+  `policy` int(10) unsigned NOT NULL DEFAULT \'0\',
+  PRIMARY KEY (`id`),
+  KEY `target` (`target`),
+  KEY `principal_class` (`principal_class`),
+  KEY `principal` (`principal`),
+  KEY `authority` (`authority`),
+  KEY `policy` (`policy`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8',
+    'data' => 
+    array (
+    ),
+  ),
+  'vehicle_package' => 'vapor',
+  'vehicle_class' => 'vaporVehicle',
+  'guid' => 'd08440df3310c55519187542e092762d',
+  'package' => '',
+  'signature' => '6afffcef940b4fa2141a766cd9be332c',
+  'native_key' => 'd08440df3310c55519187542e092762d',
+);

@@ -1,0 +1,43 @@
+<?php return array (
+  'class' => 'vaporVehicle',
+  'object' => 
+  array (
+    'tableName' => 'access_context',
+    'drop' => 'DROP TABLE IF EXISTS `[[++table_prefix]]access_context`',
+    'table' => 'CREATE TABLE `[[++table_prefix]]access_context` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `target` varchar(100) NOT NULL DEFAULT \'\',
+  `principal_class` varchar(100) NOT NULL DEFAULT \'modPrincipal\',
+  `principal` int(10) unsigned NOT NULL DEFAULT \'0\',
+  `authority` int(10) unsigned NOT NULL DEFAULT \'9999\',
+  `policy` int(10) unsigned NOT NULL DEFAULT \'0\',
+  PRIMARY KEY (`id`),
+  KEY `target` (`target`),
+  KEY `principal_class` (`principal_class`),
+  KEY `principal` (`principal`),
+  KEY `authority` (`authority`),
+  KEY `policy` (`policy`)
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=utf8',
+    'data' => 
+    array (
+      0 => 'INSERT INTO `[[++table_prefix]]access_context` (`id`, `target`, `principal_class`, `principal`, `authority`, `policy`) VALUES (\'1\', \'web\', \'modUserGroup\', \'0\', \'9999\', \'3\')',
+      1 => 'INSERT INTO `[[++table_prefix]]access_context` (`id`, `target`, `principal_class`, `principal`, `authority`, `policy`) VALUES (\'2\', \'mgr\', \'modUserGroup\', \'1\', \'0\', \'2\')',
+      2 => 'INSERT INTO `[[++table_prefix]]access_context` (`id`, `target`, `principal_class`, `principal`, `authority`, `policy`) VALUES (\'3\', \'web\', \'modUserGroup\', \'1\', \'0\', \'2\')',
+      3 => 'INSERT INTO `[[++table_prefix]]access_context` (`id`, `target`, `principal_class`, `principal`, `authority`, `policy`) VALUES (\'4\', \'spravochniki\', \'modUserGroup\', \'1\', \'9999\', \'11\')',
+      4 => 'INSERT INTO `[[++table_prefix]]access_context` (`id`, `target`, `principal_class`, `principal`, `authority`, `policy`) VALUES (\'12\', \'web\', \'modUserGroup\', \'11\', \'5000\', \'18\')',
+      5 => 'INSERT INTO `[[++table_prefix]]access_context` (`id`, `target`, `principal_class`, `principal`, `authority`, `policy`) VALUES (\'6\', \'mgr\', \'modUserGroup\', \'7\', \'5000\', \'16\')',
+      6 => 'INSERT INTO `[[++table_prefix]]access_context` (`id`, `target`, `principal_class`, `principal`, `authority`, `policy`) VALUES (\'7\', \'mgr\', \'modUserGroup\', \'6\', \'5000\', \'15\')',
+      7 => 'INSERT INTO `[[++table_prefix]]access_context` (`id`, `target`, `principal_class`, `principal`, `authority`, `policy`) VALUES (\'8\', \'mgr\', \'modUserGroup\', \'8\', \'5000\', \'14\')',
+      8 => 'INSERT INTO `[[++table_prefix]]access_context` (`id`, `target`, `principal_class`, `principal`, `authority`, `policy`) VALUES (\'9\', \'mgr\', \'modUserGroup\', \'9\', \'5000\', \'13\')',
+      9 => 'INSERT INTO `[[++table_prefix]]access_context` (`id`, `target`, `principal_class`, `principal`, `authority`, `policy`) VALUES (\'10\', \'web\', \'modUserGroup\', \'10\', \'9999\', \'4\')',
+      10 => 'INSERT INTO `[[++table_prefix]]access_context` (`id`, `target`, `principal_class`, `principal`, `authority`, `policy`) VALUES (\'11\', \'web\', \'modUserGroup\', \'5\', \'9999\', \'4\')',
+      11 => 'INSERT INTO `[[++table_prefix]]access_context` (`id`, `target`, `principal_class`, `principal`, `authority`, `policy`) VALUES (\'13\', \'mgr\', \'modUserGroup\', \'11\', \'5000\', \'18\')',
+    ),
+  ),
+  'vehicle_package' => 'vapor',
+  'vehicle_class' => 'vaporVehicle',
+  'guid' => 'dad9f3698168513fb63e4f31caeb1bcf',
+  'package' => '',
+  'signature' => '88002ea14eb1ede1e0679f2f99319b41',
+  'native_key' => 'dad9f3698168513fb63e4f31caeb1bcf',
+);

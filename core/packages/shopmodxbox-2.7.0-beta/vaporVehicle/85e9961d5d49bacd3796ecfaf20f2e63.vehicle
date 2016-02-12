@@ -1,0 +1,22 @@
+<?php return array (
+  'class' => 'vaporVehicle',
+  'object' => 
+  array (
+    'tableName' => 'fc_profiles_usergroups',
+    'drop' => 'DROP TABLE IF EXISTS `[[++table_prefix]]fc_profiles_usergroups`',
+    'table' => 'CREATE TABLE `[[++table_prefix]]fc_profiles_usergroups` (
+  `usergroup` int(11) NOT NULL DEFAULT \'0\',
+  `profile` int(11) NOT NULL DEFAULT \'0\',
+  PRIMARY KEY (`usergroup`,`profile`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8',
+    'data' => 
+    array (
+    ),
+  ),
+  'vehicle_package' => 'vapor',
+  'vehicle_class' => 'vaporVehicle',
+  'guid' => 'bed203ff4bc2401388f4d0414e5608fc',
+  'package' => '',
+  'signature' => '85e9961d5d49bacd3796ecfaf20f2e63',
+  'native_key' => 'bed203ff4bc2401388f4d0414e5608fc',
+);

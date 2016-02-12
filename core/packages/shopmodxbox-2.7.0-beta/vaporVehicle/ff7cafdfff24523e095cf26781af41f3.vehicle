@@ -1,0 +1,22 @@
+<?php return array (
+  'class' => 'vaporVehicle',
+  'object' => 
+  array (
+    'tableName' => 'modxsdk_vehicle',
+    'drop' => 'DROP TABLE IF EXISTS `[[++table_prefix]]modxsdk_vehicle`',
+    'table' => 'CREATE TABLE `[[++table_prefix]]modxsdk_vehicle` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8',
+    'data' => 
+    array (
+    ),
+  ),
+  'vehicle_package' => 'vapor',
+  'vehicle_class' => 'vaporVehicle',
+  'guid' => 'eb6e5e0451b8fe60848b019c2cc09e64',
+  'package' => '',
+  'signature' => 'ff7cafdfff24523e095cf26781af41f3',
+  'native_key' => 'eb6e5e0451b8fe60848b019c2cc09e64',
+);

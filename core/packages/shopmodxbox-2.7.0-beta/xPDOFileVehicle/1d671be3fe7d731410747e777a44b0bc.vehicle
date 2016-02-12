@@ -1,0 +1,15 @@
+<?php return array (
+  'class' => 'xPDOFileVehicle',
+  'object' => 
+  array (
+    'source' => 'shopmodxbox-2.7.0-beta/xPDOFileVehicle/1d671be3fe7d731410747e777a44b0bc/',
+    'target' => 'return MODX_BASE_PATH;',
+    'name' => 'assets',
+  ),
+  'vehicle_class' => 'xPDOFileVehicle',
+  'vehicle_package' => 'transport',
+  'guid' => '637490b91d38d4796e737d52c590f123',
+  'package' => '',
+  'signature' => '1d671be3fe7d731410747e777a44b0bc',
+  'native_key' => '637490b91d38d4796e737d52c590f123',
+);

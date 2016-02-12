@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd5738afefd2c318d4f341d203301f18b',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'd83b5bb9b848c662c56733673ff54194',
+  'native_key' => 'feed_modx_security',
+  'object' => '{"key":"feed_modx_security","value":"http:\\/\\/forums.modx.com\\/board.xml?board=294","xtype":"textfield","namespace":"core","area":"system","editedon":null}',
+);

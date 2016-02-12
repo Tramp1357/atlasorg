@@ -1,0 +1,39 @@
+<?php
+# CMS Made Simple Configuration File
+# Documentation: /doc/CMSMS_config_reference.pdf
+#
+$config['dbms'] = 'mysql';
+$config['db_hostname'] = 'localhost';
+$config['db_username'] = 'berlinms';
+$config['db_password'] = 'VfWBQcUKfAtF2Wz5';
+$config['db_name'] = 'berlin_ms';
+$config['db_prefix'] = 'cms_';
+$config['db_port'] = 0;
+$config['root_url'] = 'http://berlin.ru';
+$config['timezone'] = 'Europe/Moscow';
+$config['default_encoding'] = 'utf-8';
+
+#------------
+#URL Settings
+#------------
+#What type of URL rewriting should we be using for pretty URLs?  Valid options are:
+#'none', 'internal', and 'mod_rewrite'.  'internal' will not work with IIS some CGI
+#configurations. 'mod_rewrite' requires proper apache configuration, a valid
+#.htaccess file and most likely {metadata} in your page templates.  For more
+#information, see:
+#http://wiki.cmsmadesimple.org/index.php/FAQ/Installation/Pretty_URLs#Pretty_URL.27s
+$config['url_rewriting'] = 'mod_rewrite';
+ 
+#Extension to use if you're using mod_rewrite for pretty URLs.
+$config['page_extension'] = '/';
+
+#If you're using the internal pretty url mechanism or mod_rewrite, would you like to
+#show urls in their hierarchy?  (ex. http://www.mysite.com/parent/parent/childpage)
+$config['use_hierarchy'] = true;
+ 
+#If using none of the above options, what should we be using for the query string
+#variable?  (ex. http://www.mysite.com/index.php?page=somecontent)
+$config['query_var'] = 'page';
+
+#$config['debug'] = true;
+?>

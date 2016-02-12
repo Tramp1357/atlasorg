@@ -1,0 +1,37 @@
+<?php return array (
+  'class' => 'vaporVehicle',
+  'object' => 
+  array (
+    'tableName' => 'member_groups',
+    'drop' => 'DROP TABLE IF EXISTS `[[++table_prefix]]member_groups`',
+    'table' => 'CREATE TABLE `[[++table_prefix]]member_groups` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_group` int(10) unsigned NOT NULL DEFAULT \'0\',
+  `member` int(10) unsigned NOT NULL DEFAULT \'0\',
+  `role` int(10) unsigned NOT NULL DEFAULT \'1\',
+  `rank` int(10) unsigned NOT NULL DEFAULT \'0\',
+  PRIMARY KEY (`id`),
+  KEY `role` (`role`),
+  KEY `rank` (`rank`)
+) ENGINE=MyISAM AUTO_INCREMENT=103 DEFAULT CHARSET=utf8',
+    'data' => 
+    array (
+      0 => 'INSERT INTO `[[++table_prefix]]member_groups` (`id`, `user_group`, `member`, `role`, `rank`) VALUES (\'102\', \'7\', \'1\', \'2\', \'2\')',
+      1 => 'INSERT INTO `[[++table_prefix]]member_groups` (`id`, `user_group`, `member`, `role`, `rank`) VALUES (\'101\', \'4\', \'1\', \'2\', \'1\')',
+      2 => 'INSERT INTO `[[++table_prefix]]member_groups` (`id`, `user_group`, `member`, `role`, `rank`) VALUES (\'100\', \'1\', \'1\', \'2\', \'0\')',
+      3 => 'INSERT INTO `[[++table_prefix]]member_groups` (`id`, `user_group`, `member`, `role`, `rank`) VALUES (\'44\', \'11\', \'36\', \'3\', \'0\')',
+      4 => 'INSERT INTO `[[++table_prefix]]member_groups` (`id`, `user_group`, `member`, `role`, `rank`) VALUES (\'53\', \'6\', \'37\', \'3\', \'1\')',
+      5 => 'INSERT INTO `[[++table_prefix]]member_groups` (`id`, `user_group`, `member`, `role`, `rank`) VALUES (\'52\', \'9\', \'37\', \'3\', \'1\')',
+      6 => 'INSERT INTO `[[++table_prefix]]member_groups` (`id`, `user_group`, `member`, `role`, `rank`) VALUES (\'87\', \'7\', \'38\', \'3\', \'1\')',
+      7 => 'INSERT INTO `[[++table_prefix]]member_groups` (`id`, `user_group`, `member`, `role`, `rank`) VALUES (\'57\', \'8\', \'39\', \'3\', \'1\')',
+      8 => 'INSERT INTO `[[++table_prefix]]member_groups` (`id`, `user_group`, `member`, `role`, `rank`) VALUES (\'56\', \'6\', \'39\', \'3\', \'1\')',
+      9 => 'INSERT INTO `[[++table_prefix]]member_groups` (`id`, `user_group`, `member`, `role`, `rank`) VALUES (\'86\', \'6\', \'38\', \'3\', \'0\')',
+    ),
+  ),
+  'vehicle_package' => 'vapor',
+  'vehicle_class' => 'vaporVehicle',
+  'guid' => '87ef2e57303895016da30fafd0f7a5ec',
+  'package' => '',
+  'signature' => '4667727e614c221fc5991e4bf4724d74',
+  'native_key' => '87ef2e57303895016da30fafd0f7a5ec',
+);

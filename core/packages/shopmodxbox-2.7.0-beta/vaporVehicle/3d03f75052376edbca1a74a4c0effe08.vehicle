@@ -1,0 +1,28 @@
+<?php return array (
+  'class' => 'vaporVehicle',
+  'object' => 
+  array (
+    'tableName' => 'manager_log',
+    'drop' => 'DROP TABLE IF EXISTS `[[++table_prefix]]manager_log`',
+    'table' => 'CREATE TABLE `[[++table_prefix]]manager_log` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user` int(10) unsigned NOT NULL DEFAULT \'0\',
+  `occurred` datetime DEFAULT \'0000-00-00 00:00:00\',
+  `action` varchar(100) NOT NULL DEFAULT \'\',
+  `classKey` varchar(100) NOT NULL DEFAULT \'\',
+  `item` varchar(255) NOT NULL DEFAULT \'0\',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8',
+    'data' => 
+    array (
+      0 => 'INSERT INTO `[[++table_prefix]]manager_log` (`id`, `user`, `occurred`, `action`, `classKey`, `item`) VALUES (\'1\', \'1\', \'2015-10-25 17:41:36\', \'file_update\', \'\', \'/var/www/modxdev.webtm.ru/shopmodxbox/dev/modx2_3/public_html/vapor_box/vapor.php\')',
+      1 => 'INSERT INTO `[[++table_prefix]]manager_log` (`id`, `user`, `occurred`, `action`, `classKey`, `item`) VALUES (\'2\', \'1\', \'2015-10-25 17:44:37\', \'user_update\', \'modUser\', \'1\')',
+    ),
+  ),
+  'vehicle_package' => 'vapor',
+  'vehicle_class' => 'vaporVehicle',
+  'guid' => 'b502a96f96a5561120a2c267b468e0ec',
+  'package' => '',
+  'signature' => '3d03f75052376edbca1a74a4c0effe08',
+  'native_key' => 'b502a96f96a5561120a2c267b468e0ec',
+);

@@ -1,0 +1,41 @@
+<?php return array (
+  'class' => 'vaporVehicle',
+  'object' => 
+  array (
+    'tableName' => 'actiondom',
+    'drop' => 'DROP TABLE IF EXISTS `[[++table_prefix]]actiondom`',
+    'table' => 'CREATE TABLE `[[++table_prefix]]actiondom` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `set` int(11) NOT NULL DEFAULT \'0\',
+  `action` varchar(255) NOT NULL DEFAULT \'\',
+  `name` varchar(255) NOT NULL DEFAULT \'\',
+  `description` text,
+  `xtype` varchar(100) NOT NULL DEFAULT \'\',
+  `container` varchar(255) NOT NULL DEFAULT \'\',
+  `rule` varchar(100) NOT NULL DEFAULT \'\',
+  `value` text NOT NULL,
+  `constraint` varchar(255) NOT NULL DEFAULT \'\',
+  `constraint_field` varchar(100) NOT NULL DEFAULT \'\',
+  `constraint_class` varchar(100) NOT NULL DEFAULT \'\',
+  `active` tinyint(1) unsigned NOT NULL DEFAULT \'1\',
+  `for_parent` tinyint(1) unsigned NOT NULL DEFAULT \'0\',
+  `rank` int(11) NOT NULL DEFAULT \'0\',
+  PRIMARY KEY (`id`),
+  KEY `set` (`set`),
+  KEY `action` (`action`),
+  KEY `name` (`name`),
+  KEY `active` (`active`),
+  KEY `for_parent` (`for_parent`),
+  KEY `rank` (`rank`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8',
+    'data' => 
+    array (
+    ),
+  ),
+  'vehicle_package' => 'vapor',
+  'vehicle_class' => 'vaporVehicle',
+  'guid' => '2a505ce21a4e9157ff7cbf7183e515c5',
+  'package' => '',
+  'signature' => '36be30370231c174c0837434bfd37c88',
+  'native_key' => '2a505ce21a4e9157ff7cbf7183e515c5',
+);

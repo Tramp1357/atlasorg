@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '20702084aa54d72c1334ac906078edb3',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '3a0590d191bda3b4169a11d46e1962ee',
+  'native_key' => 'archive_with',
+  'object' => '{"key":"archive_with","value":false,"xtype":"combo-boolean","namespace":"core","area":"system","editedon":null}',
+);

@@ -1,0 +1,31 @@
+<?php return array (
+  'class' => 'vaporVehicle',
+  'object' => 
+  array (
+    'tableName' => 'cmpgenerator',
+    'drop' => 'DROP TABLE IF EXISTS `[[++table_prefix]]cmpgenerator`',
+    'table' => 'CREATE TABLE `[[++table_prefix]]cmpgenerator` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `package` varchar(255) DEFAULT NULL,
+  `database` varchar(128) DEFAULT NULL,
+  `tables` text,
+  `table_prefix` varchar(255) DEFAULT NULL,
+  `build_scheme` int(1) DEFAULT \'1\',
+  `build_package` int(1) DEFAULT \'1\',
+  `create_date` datetime DEFAULT NULL,
+  `last_ran` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8',
+    'data' => 
+    array (
+      0 => 'INSERT INTO `[[++table_prefix]]cmpgenerator` (`id`, `package`, `database`, `tables`, `table_prefix`, `build_scheme`, `build_package`, `create_date`, `last_ran`) VALUES (\'1\', \'_shop\', \'\', \'modx_shop_orders,modx_shop_orders_history\', \'modx_\', \'1\', \'1\', \'2013-06-30 16:44:15\', \'2015-07-12 13:16:21\')',
+      1 => 'INSERT INTO `[[++table_prefix]]cmpgenerator` (`id`, `package`, `database`, `tables`, `table_prefix`, `build_scheme`, `build_package`, `create_date`, `last_ran`) VALUES (\'2\', \'_billing\', \'\', \'modx_billing_payments,modx_billing_paysystems,modx_billing_orders,modx_billing_order_products,modx_billing_order_statuses\', \'modx_billing_\', \'1\', \'1\', \'2013-09-14 21:56:16\', \'2015-07-12 13:16:14\')',
+    ),
+  ),
+  'vehicle_package' => 'vapor',
+  'vehicle_class' => 'vaporVehicle',
+  'guid' => '0183c764c45c9c0c762064426ea48853',
+  'package' => '',
+  'signature' => '41ffab15f8a4d11da79650f957d6a1ab',
+  'native_key' => '0183c764c45c9c0c762064426ea48853',
+);

@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'eb5e1f725b412582160b03e935f2c0c5',
+  'package' => 'modx.sources',
+  'class' => 'modFileMediaSource',
+  'signature' => 'da4f28c9fe5b9b34ff0fbd6028298694',
+  'native_key' => 10,
+  'object' => '{"id":10,"name":"Images","description":"\\u0414\\u043b\\u044f \\u043a\\u0430\\u0440\\u0442\\u0438\\u043d\\u043e\\u043a","class_key":"sources.modFileMediaSource","properties":"a:2:{s:8:\\"basePath\\";a:6:{s:4:\\"name\\";s:8:\\"basePath\\";s:4:\\"desc\\";s:23:\\"prop_file.basePath_desc\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:14:\\"assets\\/images\\/\\";s:7:\\"lexicon\\";s:11:\\"core:source\\";}s:7:\\"baseUrl\\";a:6:{s:4:\\"name\\";s:7:\\"baseUrl\\";s:4:\\"desc\\";s:22:\\"prop_file.baseUrl_desc\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:14:\\"assets\\/images\\/\\";s:7:\\"lexicon\\";s:11:\\"core:source\\";}}","is_stream":1}',
+);

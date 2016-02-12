@@ -1,0 +1,31 @@
+<?php return array (
+  'class' => 'vaporVehicle',
+  'object' => 
+  array (
+    'tableName' => 'modhybridauth_providers',
+    'drop' => 'DROP TABLE IF EXISTS `[[++table_prefix]]modhybridauth_providers`',
+    'table' => 'CREATE TABLE `[[++table_prefix]]modhybridauth_providers` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `keys` text NOT NULL,
+  `scope` text,
+  `enabled` enum(\'1\',\'0\') NOT NULL DEFAULT \'0\',
+  `class_key` varchar(50) NOT NULL DEFAULT \'modHybridAuthProvider\',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8',
+    'data' => 
+    array (
+      0 => 'INSERT INTO `[[++table_prefix]]modhybridauth_providers` (`id`, `name`, `keys`, `scope`, `enabled`, `class_key`) VALUES (\'1\', \'Twitter\', \'{\\"key\\":\\"7Wxwefwefod0yaXrAjw\\",\\"secret\\":\\"wjjhGdRE8wewefWEweffsdFeFfKNEdMUoVTM\\"}\', NULL, \'0\', \'modHybridAuthProvider\')',
+      1 => 'INSERT INTO `[[++table_prefix]]modhybridauth_providers` (`id`, `name`, `keys`, `scope`, `enabled`, `class_key`) VALUES (\'2\', \'Facebook\', \'{\\"id\\":\\"645634534535526340\\",\\"secret\\":\\"aefdc30cdffwef234rfefweffwfb3678\\"}\', NULL, \'0\', \'modHybridAuthProvider\')',
+      2 => 'INSERT INTO `[[++table_prefix]]modhybridauth_providers` (`id`, `name`, `keys`, `scope`, `enabled`, `class_key`) VALUES (\'3\', \'Google\', \'{\\"id\\":\\"123432312-66d2dgfdgww234fa8phedldjobacmf.apps.googleusercontent.com\\",\\"secret\\":\\"8Eyz9403wer2SDf2meO4BL\\"}\', NULL, \'0\', \'modHybridAuthProvider\')',
+      3 => 'INSERT INTO `[[++table_prefix]]modhybridauth_providers` (`id`, `name`, `keys`, `scope`, `enabled`, `class_key`) VALUES (\'4\', \'Yandex\', \'{\\"id\\":\\"234j2k34h234234ewfewf\\",\\"secret\\":\\"8Eyz940wefwefwefewfwefw\\"}\', NULL, \'0\', \'modHybridAuthProvider\')',
+    ),
+  ),
+  'vehicle_package' => 'vapor',
+  'vehicle_class' => 'vaporVehicle',
+  'guid' => 'c9783e1b6898aa329db51809eaf9ab96',
+  'package' => '',
+  'signature' => 'b60b5b9eb1254223eb7165c1a13fa1c4',
+  'native_key' => 'c9783e1b6898aa329db51809eaf9ab96',
+);
