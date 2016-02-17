@@ -633,7 +633,7 @@ class modResource extends modAccessibleSimpleObject implements modResourceInterf
         }
         $refreshChildURIs = false;
         if ($this->xpdo instanceof modX && $this->xpdo->getOption('friendly_urls')) {
-            $refreshChildURIs = ($this->get('refreshURIs') || $this->isDirty('alias') || $this->isDirty('parent') || $this->isDirty('context_key') || $this->isDirty('exclude_alias_in_childs'));
+	        $refreshChildURIs = ($this->get('refreshURIs') || $this->isDirty('uri') || $this->isDirty('alias') || $this->isDirty('parent') || $this->isDirty('context_key') || $this->isDirty('exclude_alias_in_childs'));
             if ($this->get('uri') == '' || (!$this->get('uri_override') && ($this->isDirty('uri_override') || $this->isDirty('content_type') || $this->isDirty('isfolder') || $refreshChildURIs))) {
                 $this->set('uri', $this->getAliasPath($this->get('alias')));
             }
@@ -894,22 +894,32 @@ class modResource extends modAccessibleSimpleObject implements modResourceInterf
             $aliasPath= '';
             /* if using full alias paths, calculate here */
             if ($workingContext->getOption('use_alias_path', false)) {
+                $useFrozenPathUris = $workingContext->getOption('use_frozen_parent_uris', false);
                 $pathParentId= $fields['parent'];
                 $parentResources= array ();
                 $query = $this->xpdo->newQuery('modResource');
-                $query->select($this->xpdo->getSelectColumns('modResource', '', '', array('parent', 'alias', 'exclude_alias_in_childs')));
+	            $query->select($this->xpdo->getSelectColumns('modResource', '', '', array('parent', 'alias', 'uri', 'uri_override', 'exclude_alias_in_childs')));
                 $query->where("{$this->xpdo->escape('id')} = ?");
                 $query->prepare();
                 $query->stmt->execute(array($pathParentId));
                 $currResource= $query->stmt->fetch(PDO::FETCH_ASSOC);
+
                 while ($currResource) {
+                    // If the use_frozen_parent_uris setting is enabled, we will look at the parent frozen uri instead
+                    // of building the full uri from all parents. This makes sure children will have an uri relative
+                    // from the parent at all times.
+                    if ($useFrozenPathUris && $currResource['uri_override'] && !empty($currResource['uri'])) {
+                        $parentResources[] = rtrim($currResource['uri'], '/');
+                        break;
+                    }
+
                     $parentAlias= $currResource['alias'];
                     if (empty ($parentAlias)) {
                         $parentAlias= "{$pathParentId}";
                     }
-                    if (empty ($currResource['exclude_alias_in_childs'])) {
-                        $parentResources[]= "{$parentAlias}";
-                    }
+	                if (empty ($currResource['exclude_alias_in_childs'])) {
+			            $parentResources[]= "{$parentAlias}";
+		            }
                     $pathParentId= $currResource['parent'];
                     $query->stmt->execute(array($pathParentId));
                     $currResource= $query->stmt->fetch(PDO::FETCH_ASSOC);
@@ -939,7 +949,6 @@ class modResource extends modAccessibleSimpleObject implements modResourceInterf
             'id:!=' => $this->get('id'),
             'uri' => $aliasPath,
             'deleted' => false,
-            'published' => true
         );
         if (!empty($contextKey)) {
             $where['context_key'] = $contextKey;

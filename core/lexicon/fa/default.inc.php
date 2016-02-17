@@ -8,7 +8,7 @@
  */
 $_lang['access'] = 'دسترسی';
 $_lang['access_denied'] = 'امکان دسترسی وجود ندارد.';
-$_lang['action'] = 'فعالیت';
+$_lang['action'] = 'Action';
 $_lang['action_err_nfs'] = 'هیچ عملیاتی با شناسه‌ی [[+id]] موجود نیست.';
 $_lang['actions'] = 'Actions';
 $_lang['active_users_none'] = 'هیچ کاربر فعالی موجود نیست.';
@@ -76,7 +76,7 @@ $_lang['confirm_delete_message'] = 'آیا از حذف این پیام اطمی�
 $_lang['confirm_remove'] = 'آیا از حذف این مورد اطمینان دارید؟';
 $_lang['confirm_remove_locks'] = 'Users sometimes close their browser while editing documents, templates, snippets or parsers, possibly leaving the item they were editing in locked state. By pressing OK you can remove ALL locks currently in place.<br /><br />Proceed?';
 $_lang['confirm_undelete'] = 'Any children documents deleted at the same time as this document will also be undeleted, but children documents deleted at an earlier time will still be deleted.';
-$_lang['confirm_unpublish'] = 'Un-publishing this document now will remove any (un)publishing dates that may have been set. If you wish to set or keep publish or unpublish dates, please choose to edit the document instead.\\n\\nProceed?';
+$_lang['confirm_unpublish'] = 'Un-publishing this document now will remove any (un)publishing dates that may have been set. If you wish to set or keep publish or unpublish dates, please choose to edit the document instead.\n\nProceed?';
 $_lang['console'] = 'کنسول';
 $_lang['console_download_output'] = 'دانلود فایل خروجی';
 $_lang['console_running'] = 'کنسول در حال اجرا...';
@@ -229,6 +229,7 @@ $_lang['install'] = 'نصب';
 $_lang['installed'] = 'نصب شده';
 $_lang['integer'] = 'عدد صحیح';
 $_lang['introtext'] = 'Introtext';
+$_lang['invalid_data'] = 'Invalid data';
 $_lang['key'] = 'Key';
 $_lang['keyword'] = 'Keyword';
 $_lang['keywords'] = 'Keywords';
@@ -525,6 +526,7 @@ $_lang['tree_order'] = 'Tree Order';
 $_lang['recently_updated'] = 'Recently Updated';
 $_lang['newest'] = 'جدیدترین';
 $_lang['oldest'] = 'قدیمی‌ترین';
+$_lang['constraints'] = 'کانسترینت‌ها';
 
 $_lang['january'] = 'ژانویه';
 $_lang['february'] = 'فوریه';

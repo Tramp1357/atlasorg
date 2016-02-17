@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="{$loginCss}" />
 
 
-    {if $_config.ext_debug}
+    {if isset($_config.ext_debug) && $_config.ext_debug}
     <script src="{$_config.manager_url}assets/ext3/adapter/ext/ext-base-debug.js" type="text/javascript"></script>
     <script src="{$_config.manager_url}assets/ext3/ext-all-debug.js" type="text/javascript"></script>
     {else}
@@ -30,7 +30,7 @@
     <meta name="robots" content="noindex, nofollow" />
     {literal}<style>body, html { background: #fafafa !important; }</style>{/literal}
 	<script type="text/javascript">
-	var SITE_NAME = '{$_config.site_name|escape}';
+	var SITE_NAME = '{$_config.site_name|strip_tags|escape}';
 	var CONNECTORS_URL = '{$_config.connectors_url}';
 	</script>
 </head>
